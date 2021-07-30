@@ -37,11 +37,10 @@ export async function getStaticProps() {
   const result = await unsplash.photos.getRandom({
     count: 12,
   });
-  const photos = result.response
 
   return {
     props: {
-      photos
+      photos: result.response
     }
   }
 }
