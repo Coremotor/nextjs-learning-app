@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link';
 import React from "react";
 import Layout from "../../components/layout";
 import styles from './posts.module.css'
@@ -27,7 +28,9 @@ const Posts = (props: TProps) => {
           {props.posts.map((p: TPost) => (
             <li className={styles.listItem} key={p.id}>
               <h4 className={styles.postTitle}>Post title: {p.title}</h4>
-              <span className={styles.postId}>Post id: {p.id}</span>
+              <Link href={`/posts/${p.id}`}>
+                <a className={styles.postId}>Post id: {p.id}</a>
+              </Link>
               <span className={styles.postText}>Post text: {p.body}</span>
             </li>
           ))}
