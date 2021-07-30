@@ -40,7 +40,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      photos: result.response
+      photos: result.response || null
     }
   }
 }
