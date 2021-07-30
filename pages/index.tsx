@@ -21,7 +21,7 @@ const Home = (props: TProps) => {
       <Layout>
         <div className={styles.imagesContainer}>
           {
-            props.photos.map((p: Basic) => (
+            props.photos && props.photos.map((p: Basic) => (
               <div className={styles.image} key={p.id}>
                 <ImageItem photo={p}/>
               </div>
