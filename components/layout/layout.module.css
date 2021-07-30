@@ -1,0 +1,40 @@
+.container {
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    height: 100%;
+    overflow-x: auto;
+    padding: 0 10px;
+}
+
+.header {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 20px 10px;
+}
+
+.logo {
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.nav {}
+
+.link {
+    margin-right: 20px;
+}
+
+.activeLink {
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+    padding: 20px 10px;
+}
